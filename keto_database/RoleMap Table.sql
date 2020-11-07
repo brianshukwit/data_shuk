@@ -1,0 +1,17 @@
+--RoleMap Table
+USE [KETO_CWDB]
+GO
+/****** Object:  Table [dbo].[RoleMap]    Script Date: 11/7/2020 3:13:33 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[RoleMap](
+	[role_id] [int] NOT NULL,
+	[role_description] [varchar](100) NULL,
+PRIMARY KEY CLUSTERED
+(
+	[role_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 80) ON [PRIMARY]
+) ON [PRIMARY]
+GO
