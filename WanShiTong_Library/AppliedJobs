@@ -1,3 +1,4 @@
+-- Table Creation
 CREATE TABLE `AppliedJobs` (
   `company_name` int NOT NULL,
   `location` varchar(45) NOT NULL,
@@ -9,3 +10,5 @@ CREATE TABLE `AppliedJobs` (
   `applied_id` varchar(45) NOT NULL,
   PRIMARY KEY (`applied_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dataload Creation
