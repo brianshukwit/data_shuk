@@ -10,7 +10,7 @@ contains `create_server_connection`, `create_db_connection` functions.<br>
 # execute_read.py  <br>
 contains `execute_query`, `read_query` functions.<br>
 
-# AppliedJobs.py<br>
+# appliedjobs.py<br>
 creation for AppliedJobs Table<br>
 insertion for AppliedJobs Data<br>
 selection of AppliedJobs<br>
