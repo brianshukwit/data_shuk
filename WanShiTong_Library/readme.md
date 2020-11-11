@@ -7,7 +7,7 @@ Current Contents:<br>
 
 # server_db_connection.py <br>
 contains `create_server_connection`, `create_db_connection` functions.<br>
-# query.py  <br>
+# execute_read.py  <br>
 contains `execute_query`, `read_query` functions.<br>
 
 # AppliedJobs.py<br>
