@@ -74,3 +74,16 @@ INSERT INTO AppliedJobs (response, company_name, location, position, phone_numbe
 
 
 query.execute_query(db_connection, job_applied)
+
+
+q1 = """
+SELECT *
+FROM AppliedJObs;
+"""
+
+
+results = query.read_query(db_connection, q1)
+
+
+for result in results:
+  print(result)
