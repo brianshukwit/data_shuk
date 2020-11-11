@@ -1,10 +1,11 @@
-import create
-import query
+import server_db_connection
+import execute_read
+
 
 # Connect to Server and create database
-server_connection = create.create_server_connection("localhost","root",pw)
+server_connection = server_db_connection.create_server_connection("localhost","root",pw)
 create_database_query = "CREATE DATABASE AppliedJobs"
-create.create_database(server_connection, create_database_query)
+execute_read.execute_query(server_connection, create_database_query)
 
 
 create_jobs_applied_table = """
@@ -21,8 +22,8 @@ CREATE TABLE `AppliedJobs` (
 )
 """
 
-db_connection = create.create_db_connection("localhost","root", pw, db)
-query.execute_query(db_connection, create_jobs_applied_table)
+db_connection = server_db_connection.create_db_connection("localhost","root", pw, db)
+execute_read.execute_query(db_connection, create_jobs_applied_table)
 
 
 job_applied = """
@@ -73,7 +74,7 @@ INSERT INTO AppliedJobs (response, company_name, location, position, phone_numbe
 """
 
 
-query.execute_query(db_connection, job_applied)
+execute_read.execute_query(db_connection, job_applied)
 
 
 q1 = """
@@ -82,7 +83,7 @@ FROM AppliedJObs;
 """
 
 
-results = query.read_query(db_connection, q1)
+results = execute_read.read_query(db_connection, q1)
 
 
 for result in results:
